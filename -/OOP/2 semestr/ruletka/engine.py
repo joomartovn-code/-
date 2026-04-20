@@ -9,7 +9,6 @@ class RouletteGame:
         self.reload()
 
     def reload(self):
-        # Создаем барабан: 1 - пуля, 0 - пусто
         self.drum = [1] * self.bullets_count + [0] * (self.slots - self.bullets_count)
         random.shuffle(self.drum)
 
